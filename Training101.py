@@ -63,8 +63,8 @@ print(sum_n)
 """
 #Ex 11 - 
 
-
-
+name = input('whats ur name?\n')
+print('Hi, %s.' % name)
 
 
 
