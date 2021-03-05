@@ -14,3 +14,6 @@ msg = 'Hello, ' + full_name.title() + '!'
 print(msg)
 
 print('\tpython')
+
+print(f"Hello, {full_name.title()}!")
+print(f"My name is {first_name+last_name} and I am {sum([2,3,4])}")
