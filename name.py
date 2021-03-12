@@ -1,3 +1,5 @@
+'''
+
 name = 'ada lovelace'
 print(name.title())
 
@@ -20,7 +22,17 @@ print(f"My bname is {first_name+last_name} and I am {sum([2,3,4])}")
 
 print("Language:\nPython\nC\nJavaScript")
 
-whitespace = 'python " '
-nowhitespace = whitespace.rstrip()
-print(whitespace)
-print(nowhitespace)
+
+'''
+
+
+favorite_lang = ' python '
+print(favorite_lang)
+favorite_lang = favorite_lang.strip()
+print(favorite_lang)
+
+
+msg = "What'd u get?"
+print(msg)
+msg = 'What'd u get?'
+print(msg)
