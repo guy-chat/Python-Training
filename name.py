@@ -17,3 +17,10 @@ print('\tpython')
 
 print(f"Hello, {full_name.title()}!")
 print(f"My bname is {first_name+last_name} and I am {sum([2,3,4])}")
+
+print("Language:\nPython\nC\nJavaScript")
+
+whitespace = 'python " '
+nowhitespace = whitespace.rstrip()
+print(whitespace)
+print(nowhitespace)
