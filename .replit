@@ -1,2 +1,2 @@
 language = "python 3"
-run = "python name.py"
+run = "python list.py"

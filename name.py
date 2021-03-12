@@ -34,5 +34,12 @@ print(favorite_lang)
 
 msg = "What'd u get?"
 print(msg)
-msg = 'What'd u get?'
-print(msg)
+
+'''msg = 'What'd u get?'
+print(msg) '''
+
+#import this
+
+
+
+
