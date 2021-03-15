@@ -55,8 +55,12 @@ frd_food.append('sugar')
 print(my_food)
 print(frd_food)
 
-b_tuple = ('b','a','c')
+b_tuple = ('b','a','c','e','x')
 b_list = ['b','a','c']
-print(b_list.insert(2,'d'))
-print(b_list.reverse())
+b_list.insert(2,'d')
+b_list.reverse()
+print(b_tuple[2])
+print(sorted(b_tuple))
+print(b_tuple)
+
 
