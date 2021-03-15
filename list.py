@@ -38,3 +38,25 @@ del dinner[-1]
 del dinner[-1]
 print(dinner)
 
+squares = []
+for value in range(1,11):
+  squared_no = value**2
+  squares.append(squared_no)
+print(squares)  
+print(sum(squares))
+
+xo = [2.1,2.3,3]
+print(min(xo))
+
+my_food = ['pizza','pasta']
+frd_food = my_food[:]
+my_food.append('salt')
+frd_food.append('sugar')
+print(my_food)
+print(frd_food)
+
+b_tuple = ('b','a','c')
+b_list = ['b','a','c']
+print(b_list.insert(2,'d'))
+print(b_list.reverse())
+
