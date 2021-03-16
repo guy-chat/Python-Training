@@ -1,3 +1,5 @@
+'''
+
 bic = ['trek', 'red','green','chewy']
 print(bic)
 print(bic[0].title())
@@ -63,6 +65,16 @@ print(b_tuple[2])
 print(sorted(b_tuple))
 print(b_tuple)
 
+'''
 
+#if statement
 
+cars = ['audi','bm','subaru','toyota']
 
+for car in cars:
+  if car == 'audi':
+    print(car.upper())
+  else:
+    print(car.title())
+    
+    
