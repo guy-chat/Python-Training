@@ -94,4 +94,36 @@ if user not in banned_user:
 else:
 	print(user.title() + ', plz fk off!')
 		
+# 80-90
+car = 'sub'
+print(car == 'sub')
+print(car == 'aud') 
+
+car = 'Audi'
+print(car.lower() == 'audi')
+
+age = 13
+if age >= 14:
+    print('No longer a kiddo')
+    print('But still a brat, haha!')
+else:
+    print('Not only a brat, but also a kiddo, hahaha!')    
+
+grade = 100
+if grade <= 49 :
+    print('F')
+elif grade <= 59:
+    print('P')
+elif grade <= 69:
+    print('C')
+elif grade <= 79:
+    print('D')
+elif grade <= 100: #no need for else after elif
+    print('HD')    
+    
+
+
+
+
+
                                                                                        

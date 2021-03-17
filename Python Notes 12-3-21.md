@@ -1,4 +1,4 @@
- 
+
 # `Str()` Methods
 
 *method* is an action that Python can perform on a piece of data
@@ -180,7 +180,7 @@ Use `insert(a,b)` function where `a` is the list index and `b` is the new data v
 car = ['toyota','honda','ferrari']
 car.insert(1,'lambo') #insert 'lambo' as the second element in car list
 print(car)
-``` 
+```
 ```txt
 >>> ['toyota','lambo','honda','ferrari']
 ```
@@ -249,16 +249,16 @@ print(car)
 ```
 ```txt
 >>> ['a','c','d','x']
-``` 
+```
 You can reverse the alphabetical order by passing the argument `reverse=True` in `.sort()` method
 Eg
 ```python
 car.sort(reverse=True)
 print(car)
-``` 
+```
 ```txt
 >>>['x','d','c','a']
-``` 
+```
 ## Sorting list *alphabetically* *temporarily* with `sorted(some_list)` function
 
 It lets you display the order alphabetically without affecting the actual order of the list.
@@ -361,7 +361,7 @@ for magician in magicians:
     print(magician.title() + ', cool!')
     print("Can't wait ur next trick, " + magician.title() + '.\n')
 print('Thanks everyone for coming!')
-```    
+```
 ```txt
 >>> Alice, cool!
 >>> Can't wait ur next trick, Alice.
@@ -587,6 +587,8 @@ a_tuple = ('v','c','a','d')
 print(sorted(a_tuple)) #sorted() converts tuple into a list and sort it in that instance
 print(a_tuple)
 ```
+
+
 ```txt
 >>> ['a','c','d','v']
 >>> ('v','c','a','d') #original tuple still the same that's why sorted() function works
@@ -639,7 +641,7 @@ Use Blank Lines to group parts of ur program.
 Blank lines don't affect how ur code runs, but it affects the readability of your code. 
 
 
-# `If` statement 
+# Introducing `If` statement 
 
 Use to write conditional tests, to check any condition of interest
 
@@ -712,7 +714,7 @@ ans = 17
 if ans!= 13:
   print('Incorrect answer, pls try again!')
 ```
-```txt
+```d
 Incorrect answer, pls try again!
 ```
 ## Checking multiple conditions with `and`
@@ -726,4 +728,128 @@ True
 >>> age0 >= 18 and age1>= 21
 False
 ```
+
+## Checking whether a value is not in a list using `not`
+
+Here you can use `if` statement to check whether a value is in a `list` or not, a good example is when you are checking for a banned user.
+
+Eg
+
+```python
+banned_user = ['andy','tony','charles']
+user = 'faye'
+
+if user not in banned_user:
+	print(user.title() + ', welcome!')
+else:
+	print(user.title() + ', plz fk off!')
+```
+
+```txt
+Faye, welcome!
+```
+
+Because `user`  is `'Faye'` isn't in `banned_user` she receives the `welcome!` msg, if `user` was `'andy','tony' or 'charles'` they would have received `'plz fk off'` msg.
+
+## Boolean expressions
+
+A `Boolean` value is either `True` or `False`, and is often used to keep track of certain conditions, such as whether a game is running or a user can edit website content.
+
+Eg
+
+```python
+game_active = True
+can_edit = False
+```
+
+Its an efficient way to track state of a program/ condition that's important to ur program.
+
+# `if` statement in action
+
+Indentation plays same role in `if` statement as it did in `for` loops. All indented lines will be executed if the test condition passes, and will be ignored if the test condition fails. You can have as many lines as you want following the `if` statement.
+
+Eg
+
+```python
+age = 14
+if age >= 14:
+    print('No longer a kiddo')
+    print('But still a brat, haha!')
+```
+
+```txt
+No longer a kiddo
+But still a brat, haha!
+```
+
+`age = 14` which satisfies test condition for `age>=14` so indented block after `if` statement is executed.
+
+## `if else` statement
+
+If the test condition fails, you'll want something to occur instead, you can use `else` for this
+
+Eg
+
+```python
+age = 13
+if age >= 14:
+    print('No longer a kiddo')
+    print('But still a brat, haha!')
+else:
+    print('Not only a brat, but also a kiddo, hahaha!')    
+```
+
+```txt
+Not only a brat, but also a kiddo, hahaha!
+```
+
+In this case `age = 13` which fails the `age>=14` condition so the indented block after `else` statement gets executed.
+
+## `If - elif - else` Chain
+
+`if-elif-else` is used when you need to test ***more than 2 conditions*** at the same time! Python executes only one block in the `if-elif-else` chain. It runs each conditional test in order until one passes, the code block following that test condition is executed and the rest of the `if-elif-else` code is ignored.
+
+Eg
+
+```python
+grade = 55
+if grade <= 49 :
+    print('F')
+elif grade <= 59:
+    print('P')
+elif grade <= 69:
+    print('C')
+elif grade <= 79:
+    print('D')
+else:
+    print('HD')    
+```
+
+```txt
+P
+```
+
+**Note that you can use as many `elif` block as you like as shown above. And there's no need for `else` statement after `elif` block.
+
+```python
+grade = 100
+if grade <= 49 :
+    print('F')
+elif grade <= 59:
+    print('P')
+elif grade <= 69:
+    print('C')
+elif grade <= 79:
+    print('D')
+elif grade <= 100:
+    print('HD')    
+```
+
+```txt
+HD
+```
+
+The code above runs just fine without `else` statement, in this case if you make `grade = 101` console simply won't return anything.
+
+## Multiple `if` statements for testing multiple conditions
 
