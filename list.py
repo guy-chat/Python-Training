@@ -65,7 +65,7 @@ print(b_tuple[2])
 print(sorted(b_tuple))
 print(b_tuple)
 
-'''
+
 
 #if statement
 
@@ -83,22 +83,15 @@ topping = 'mush'
 
 if topping != 'anch':
   print('Hold anchovies!')
-
-#one last test omfg
-  
-#replit last test 
-
-#test pythonista 1.1
-#test pythonista 1.2
-
-#replit 1.1
-#replit 1.2
-#replit 1.13 
-
-#pythonista 1.3 
-#pythonista 1.4
-#pythonista 1.5
-#pythonista 1.6
+'''
 
 
-#replit 1.4
+banned_user = ['andy','tony','charles']
+user = 'faye'
+
+if user not in banned_user:
+	print(user.title() + ', welcome!')
+else:
+	print(user.title() + ', plz fk off!')
+		
+                                                                                       
