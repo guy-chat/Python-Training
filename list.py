@@ -94,3 +94,10 @@ if topping != 'anch':
 #replit 1.1
 #replit 1.2
 #replit 1.13 
+
+#pythonista 1.3 
+#pythonista 1.4
+#pythonista 1.5
+#pythonista 1.6
+
+
