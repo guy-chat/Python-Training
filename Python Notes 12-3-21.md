@@ -853,3 +853,6 @@ The code above runs just fine without `else` statement, in this case if you make
 
 ## Multiple `if` statements for testing multiple conditions
 
+You can write multiple `if` statements to test multiple conditions
+
+Eg
