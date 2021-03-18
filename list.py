@@ -172,4 +172,9 @@ alien_1['x_coord'] = 0
 alien_1['y_coord'] = 25
 print(alien_1)
 print(alien_1['x_coord'])
-                                                                                       
+
+#testing pythonista
+#jitoijhiwtmopnybmwmbtwoiytepowh,wmn
+#uhuerahiughiugrehqiuegrhi
+
+                                                                                                                                                                                                                                                                     
