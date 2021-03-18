@@ -49,3 +49,27 @@ print(alien_1['x_coord'])
 {'color': 'green', 'points': 5, 'x_coord': 0, 'y_coord': 25}
 0
 ```
+
+## Modify values in a `dictionary`
+
+Same method as how you add new value, simply replacing the `key-pair` values
+
+Eg
+
+```python
+alien_1 = {'color': 'green','points' : 5}
+print("Alien's color is " + alien_1['color'])
+
+alien_1['color'] = 'yellow' #simply replace 'green' with 'yellow'
+print("ALien's new color is " + alien_1['color'])
+```
+
+```txt
+Alien's color is green
+ALien's new color is yellow
+```
+
+### Sophisticated Example
+
+Track the position of an alien that can move at different speeds. Storing a value for Alien's current speed and use it to determine how far to the right the alien should move.
+
