@@ -83,7 +83,7 @@ topping = 'mush'
 
 if topping != 'anch':
   print('Hold anchovies!')
-'''
+
 
 
 banned_user = ['andy','tony','charles']
@@ -108,6 +108,8 @@ if age >= 14:
     print('But still a brat, haha!')
 else:
     print('Not only a brat, but also a kiddo, hahaha!')    
+  
+  
 
 grade = 100
 if grade <= 49 :
@@ -121,9 +123,53 @@ elif grade <= 79:
 elif grade <= 100: #no need for else after elif
     print('HD')    
     
+    
+#Multiple ifs
+
+topping = ['mushrooms','extra cheese']
+
+if 'mushrooms' in topping:
+	print('Adding mush')
+if 'extra cheese' in topping:
+	print('Add cheese')
+if 'garlic' in topping:
+	print('Add garlic')
+print('\nFinished your pizza!')	
+			
 
 
+prime_numbers = [1,3,5,7,11]
+prime = 11
+if prime in prime_numbers:
+	print('Prime!')
+else:
+	print('xD')	
 
+todays_available_toppings = ['mushroom','green pep','garlic']
 
+topping_lists = ['mushroom','green pep','chilli','garlic','cheese']
+requested_toppings = ['green pep','chilli','mushroom']
 
+if len(requested_toppings) == 0:
+	print('U sure u want plain pizza?') 
+else:
+	for topping in requested_toppings:
+		if topping not in topping_lists:
+			print('we dont have ' + topping.title() + ' in our toppings.')
+		else:
+			#if its in topping list now check today's availability
+			if topping in todays_available_toppings:
+				print('Adding ' + topping.title())
+			else:
+				print('Sorry, we are out of ' + topping.title() + ' today...')
+print('\nThank u for ordering with us today!')				
+				
+'''
+alien_1 = {'color': 'green','points' : 5}
+print(alien_1)
+print('\n')
+alien_1['x_coord'] = 0
+alien_1['y_coord'] = 25
+print(alien_1)
+print(alien_1['x_coord'])
                                                                                        

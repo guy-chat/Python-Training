@@ -729,7 +729,7 @@ True
 False
 ```
 
-## Checking whether a value is not in a list using `not`
+## Checking whether a value is not in a list using `in` and `not`
 
 Here you can use `if` statement to check whether a value is in a `list` or not, a good example is when you are checking for a banned user.
 
@@ -751,6 +751,18 @@ Faye, welcome!
 
 Because `user`  is `'Faye'` isn't in `banned_user` she receives the `welcome!` msg, if `user` was `'andy','tony' or 'charles'` they would have received `'plz fk off'` msg.
 
+Likewise you can use `in` even without `not`
+```python
+prime_numbers = [1,3,5,7,11]
+prime = 11
+if prime in prime_numbers:
+	print('Prime!')
+else:
+	print('xD')
+```
+```txt
+Prime!
+```
 ## Boolean expressions
 
 A `Boolean` value is either `True` or `False`, and is often used to keep track of certain conditions, such as whether a game is running or a user can edit website content.
@@ -855,4 +867,93 @@ The code above runs just fine without `else` statement, in this case if you make
 
 You can write multiple `if` statements to test multiple conditions
 
+Eg 
+```python
+topping = ['mushrooms','extra cheese']
+
+if 'mushrooms' in topping:
+	print('Adding mush')
+if 'extra cheese' in topping: #1
+	print('Add cheese')
+if 'garlic' in topping:  #2
+	print('Add garlic')
+print('\nFinished your pizza!')	
+```
+```txt
+Adding mush
+Add cheese
+
+Finished your pizza!
+```
+*Note that if the `if` @ #1 and #2 where `elif` Python would only print
+```txt
+Adding mush
+
+Finished your pizza!
+```
+So if you want only one block of code to run use `elif`, but if more than one block of code needs to run, use a series of independent `if` statements.
+
+## `if` statement with list inside a `for` loop
+
+### Checking for special items in a list
+
 Eg
+```python
+toppings = ['mushroom','green pep','chilli','garlic','cheese']
+
+for topping in toppings:
+	if topping == 'chilli':
+		print('Sorry, we are out of ' + topping.title() +'.')
+	else:	
+		print('Adding ' + topping.title() )
+	
+print('\nToppings added!')
+```
+```txt
+Adding Mushroom
+Adding Green Pep
+Sorry, we are out of Chilli.
+Adding Garlic
+Adding Cheese
+
+Toppings added!
+```
+Here, we set a test condition for chilli which by using `if` statement instead of making everything run through the `for` loop.
+
+## Using multiple lists
+Example code for customer asking for topping and the pizza place has to check whether they request proper toppings/request any at all/request something that's available today. This code uses three lists to accomplish the task. (4 if including customer's requested list)
+Eg
+```python
+todays_available_toppings = ['mushroom','green pep','garlic']
+
+topping_lists = ['mushroom','green pep','chilli','garlic','cheese']
+requested_toppings = ['green pep','chilli','mushroom']
+
+if len(requested_toppings) == 0: 
+    #if empty list 
+	print('U sure u want plain pizza?') 
+else: 
+    #if list not empty
+	for topping in requested_toppings:
+	   #check if requested topping is in the restaurant's topping  list
+	   #if not
+		if topping not in topping_lists:
+			print('we dont have ' + topping.title() + ' in our toppings.')
+		#if yes
+		else:
+			#if its in topping list now check today's availability
+			if topping in todays_available_toppings:
+				print('Adding ' + topping.title())
+			else:
+				print('Sorry, we are out of ' + topping.title() + ' today...')
+print('\nThank u for ordering with us today!')
+```
+```txt
+Adding Green Pep
+Sorry, we are out of Chilli today...
+Adding Mushroom
+
+Thank u for ordering with us today!
+```
+
+
