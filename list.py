@@ -85,15 +85,14 @@ if topping != 'anch':
   print('Hold anchovies!')
 
 
-
-banned_user = ['andy','tony','charles']
+banned_user = ['andy','tony','charles','faye']
 user = 'faye'
 
 if user not in banned_user:
 	print(user.title() + ', welcome!')
 else:
 	print(user.title() + ', plz fk off!')
-		
+	
 # 80-90
 car = 'sub'
 print(car == 'sub')
@@ -145,17 +144,18 @@ if prime in prime_numbers:
 else:
 	print('xD')	
 
-todays_available_toppings = ['mushroom','green pep','garlic']
+
+todays_available_toppings = ['green pep','garlic']
 
 topping_lists = ['mushroom','green pep','chilli','garlic','cheese']
-requested_toppings = ['green pep','chilli','mushroom']
+requested_toppings = ['mushroom','garlic','man']
 
 if len(requested_toppings) == 0:
 	print('U sure u want plain pizza?') 
 else:
 	for topping in requested_toppings:
 		if topping not in topping_lists:
-			print('we dont have ' + topping.title() + ' in our toppings.')
+			print('We dont have ' + topping.title() + ' in our toppings.')
 		else:
 			#if its in topping list now check today's availability
 			if topping in todays_available_toppings:
@@ -173,8 +173,5 @@ alien_1['y_coord'] = 25
 print(alien_1)
 print(alien_1['x_coord'])
 
-#testing pythonista
-#jitoijhiwtmopnybmwmbtwoiytepowh,wmn
-#uhuerahiughiugrehqiuegrhi
-
+'''
                                                                                                                                                                                                                                                                      
